@@ -97,7 +97,7 @@ Proyek ini memenuhi semua kriteria submission untuk kelas ["Membuat Front-End We
 ## 🔗 Link Penting
 
 🔗 [Kelas Dicoding: Membuat Front-End Web untuk Pemula](https://www.dicoding.com/academies/315)
-🔗 [Demo Aplikasi]()
+🔗 [Demo Aplikasi](https://github.com/user-attachments/assets/7a77bd83-9817-4da3-b1be-3551d639e67b)
 
 ---
 

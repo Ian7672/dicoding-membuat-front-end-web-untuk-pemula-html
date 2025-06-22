@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Modern Bookshelf</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header glass">
+      <h1>📚 Modern Bookshelf</h1>
+      <p>Organize your reading journey with style</p>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section glass">
+      <form id="searchForm">
+        <div class="search-container">
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="Search books by title..."
+          >
+          <button type="submit" class="search-btn">🔍 Search</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Add Book Form -->
+      <section class="add-book-section glass">
+        <h2>Add New Book</h2>
+        <form id="bookForm">
+          <div class="form-group">
+            <label for="titleInput">Book Title</label>
+            <input type="text" id="titleInput" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="authorInput">Author</label>
+            <input type="text" id="authorInput" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="yearInput">Publication Year</label>
+            <input type="number" id="yearInput" class="form-input" required min="1000">
+          </div>
+          
+          <div class="checkbox-group">
+            <input type="checkbox" id="isCompleteInput">
+            <label for="isCompleteInput">Mark as finished reading</label>
+          </div>
+          
+          <button type="submit" class="submit-btn" id="submitBtn">
+            📖 Add to Unfinished Shelf
+          </button>
+        </form>
+      </section>
+
+      <!-- Bookshelves -->
+      <section class="bookshelves glass">
+        <div class="shelf-tabs">
+          <button class="shelf-tab active" data-shelf="unfinished">
+            📚 Unfinished Reading
+          </button>
+          <button class="shelf-tab" data-shelf="finished">
+            ✅ Finished Reading
+          </button>
+        </div>
+        
+        <div class="shelf-content">
+          <div id="unfinishedShelf" class="book-grid"></div>
+          <div id="finishedShelf" class="book-grid" style="display: none;"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer with GitHub credit -->
+    <footer class="footer glass" style="text-align: center; padding: 15px; color: white; margin-top: 20px;">
+      Created by <a href="https://github.com/Ian7672" style="color: #fff; text-decoration: none;">Ian7672</a>
+    </footer>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
